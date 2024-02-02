@@ -232,3 +232,8 @@ display: block;
 	   height:40px;
 	   border-radius:20px;	
 	}
+
+.result {
+	display:none;
+	}
+	
