@@ -414,8 +414,14 @@ let score=`Score:0`; // initial Score
 function gamescoreH () 
 { 
 	 point++;  //point increase 
+	    document.getElementById('result').style.display='none';
 	i++;
-	if(point<=10)
+	if(j==0)
+	{
+  	point=0;
+	   j=10;
+	}
+	else if(point<=10)
 	{
      score=` Score : ${point}/10 `;
      document.getElementById('score'). textContent=score;
@@ -426,8 +432,10 @@ function gamescoreH ()
 	else 
 	{
     point=10;//point convert to 10
-    score=`win [touch beaver for try again]`;
-    
+    result=`win [touch beaver for try again]`;
+    score=` Score:${point}/10`;
+    document.getElementById('result').style.display='block';
+    document.getElementById('result'). textContent=result;
     document.getElementById('score'). textContent=score;
      //display score
     document.getElementById('Tpwin').style.display='block';
@@ -440,17 +448,20 @@ function gamescoreH ()
 	}
 	     if(j==0)
      {
-     	point=0; //point convert to zero 
-		score=`Out [touch beaver for try again]`;
-		document.getElementById('score'). textContent=score;
+     	
+		score=` Score:${point}/10`;
+		result=`Out [touch beaver for try again]`;
+		document.getElementById('result').textContent=result;
+		document.getElementById('result').style.display='block';
+		document.getElementById('score').textContent=score;
 		//display score 
 		document.getElementById('Tpout').style.display='block';
 	    //display OUT
 		document.getElementById('tpGame').style.display='none';
 		//TpGame display OFF
 		play=0;   //OFF
-		point=0;
-		j=10;
+		
+
      	
      
      }
@@ -461,8 +472,13 @@ function gamescoreH ()
 function gamescoreD()
 { 
     point--; //point decrease 
-    
-    if(point>= -10)
+    document.getElementById('result').style.display='none';
+    if(j==0)
+    {
+    point=0; 
+    j=10;
+    }
+    else if(point>= -10)
     { 
 	 score=` Score : ${point}/10! `;
 	document.getElementById('score'). textContent=score;
@@ -472,7 +488,10 @@ function gamescoreD()
     else
     { 
         point=-10; //point convert to -10
-		score=`Out [touch beaver for try again]`;
+		score=` Score : ${point}/10! `;
+		result=`Out [touch beaver for try again]`;
+		document.getElementById('result'). textContent=result;
+		document.getElementById('result').style.display='block';
 		document.getElementById('score'). textContent=score;
 		//display score 
 		document.getElementById('Tpout').style.display='block';
@@ -485,9 +504,12 @@ function gamescoreD()
      }
      if(j==0)
      {
-     	point=0; //point convert to zero
-		score=`Out [touch beaver for try again]`;
+     	
 		
+		score=`  Score : ${point}/10! `;
+		result=`Out [touch beaver for try again]`;
+		document.getElementById('result'). textContent=result;
+		document.getElementById('result').style.display='block';
 		document.getElementById('score'). textContent=score;
 		//display score 
 		document.getElementById('Tpout').style.display='block';
@@ -495,8 +517,8 @@ function gamescoreD()
 		document.getElementById('tpGame').style.display='none';
 		//TpGame display OFF
 		play=0;   //OFF
-		point=0; //point convert to zero 
-		j=10; //game time convert to 10(high)
+		
+		
     
      }
 
@@ -578,3 +600,4 @@ const colorwidget=document.getElementById('colorchanger');
   
 }
 
+     
