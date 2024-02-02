@@ -401,7 +401,7 @@ else
 
 }
 
-setInterval(movement,500); //speed
+setInterval(movement,600); //speed
 movement(); //beaver movement call
 
     //Game score calculator script .........>>>
