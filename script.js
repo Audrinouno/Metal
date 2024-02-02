@@ -418,6 +418,19 @@ function gamescoreH ()
 	i++;
 	if(j==0)
 	{
+		score=` Score:${point}/10`;
+		result=`Out [touch beaver for try again]`;
+		document.getElementById('result').textContent=result;
+		document.getElementById('result').style.display='block';
+		document.getElementById('score').textContent=score;
+		//display score 
+		document.getElementById('Tpout').style.display='block';
+	    //display OUT
+		document.getElementById('tpGame').style.display='none';
+		//TpGame display OFF
+		play=0;   //OFF
+		
+		
   	point=0;
 	   j=10;
 	}
@@ -446,25 +459,7 @@ function gamescoreH ()
     point=0;
     j=10;
 	}
-	     if(j==0)
-     {
-     	
-		score=` Score:${point}/10`;
-		result=`Out [touch beaver for try again]`;
-		document.getElementById('result').textContent=result;
-		document.getElementById('result').style.display='block';
-		document.getElementById('score').textContent=score;
-		//display score 
-		document.getElementById('Tpout').style.display='block';
-	    //display OUT
-		document.getElementById('tpGame').style.display='none';
-		//TpGame display OFF
-		play=0;   //OFF
-		
-
-     	
-     
-     }
+	     
 }
 
     //Game Score Decrease ....>>
@@ -475,6 +470,19 @@ function gamescoreD()
     document.getElementById('result').style.display='none';
     if(j==0)
     {
+    	score=`  Score : ${point}/10! `;
+		result=`Out [touch beaver for try again]`;
+		document.getElementById('result'). textContent=result;
+		document.getElementById('result').style.display='block';
+		document.getElementById('score'). textContent=score;
+		//display score 
+		document.getElementById('Tpout').style.display='block';
+		//display OUT
+		document.getElementById('tpGame').style.display='none';
+		//TpGame display OFF
+		play=0;   //OFF
+		
+    
     point=0; 
     j=10;
     }
@@ -501,25 +509,6 @@ function gamescoreD()
 		play=0;   //OFF
 		point=0; //point convert to zero 
 		j=10; //game time convert to 10(high)
-     }
-     if(j==0)
-     {
-     	
-		
-		score=`  Score : ${point}/10! `;
-		result=`Out [touch beaver for try again]`;
-		document.getElementById('result'). textContent=result;
-		document.getElementById('result').style.display='block';
-		document.getElementById('score'). textContent=score;
-		//display score 
-		document.getElementById('Tpout').style.display='block';
-		//display OUT
-		document.getElementById('tpGame').style.display='none';
-		//TpGame display OFF
-		play=0;   //OFF
-		
-		
-    
      }
 
 }
@@ -600,4 +589,4 @@ const colorwidget=document.getElementById('colorchanger');
   
 }
 
-     
+	  
