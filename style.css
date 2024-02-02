@@ -1,0 +1,234 @@
+*{
+margin:0;
+padding:0;
+}
+
+body{
+background-color: crimson;
+color:lightgray;
+width:100%;
+font-family:Times, "Times New Roman", Georgia, serif;
+     }
+     
+/* fist logo [metal] */
+.logo{
+	height:10vw;
+	width:100vw;
+	}
+	
+/* Blinking img */
+.disign {
+	width:100px;
+	display: block;
+	float:right;
+	}
+	
+/* time element */
+.time {
+  padding:0 0 0 20px;
+  font-size: 30px;
+  color: white;
+ 
+   }
+   
+/* Date Element */
+.date{
+
+  padding:0 0 0 20px;
+  font-size: 20px;
+  color: white;
+	}
+	
+/* Shortcut icon disign */
+.shortcut{
+	margin:15px 15px 15px 15px;
+	background-color: transparent;
+	border: 0px;
+		}
+
+/* Apps Widget */
+.apps{
+	width:95%;
+	background-color: grey;
+	border: solid darkgrey 3px;
+	border-radius:10px;
+	display:none;
+	color:white;
+	}
+
+/* Apps Widget Button */
+.button{
+    margin:10px 10px 10px 10px;
+	background-color: black;
+	border: solid black 2px;
+	border-radius:10px;
+	}
+
+/* Default img size */
+.img{
+	width:50px;
+    border-radius:7px;
+    }
+ /* Shortcut image*/
+ .shortcut_img{
+	width:40px;
+    border-radius:7px;
+    }
+ 
+ /* TpGame logo */
+.tplogo{
+	width:200px;
+	}
+	
+/* TpGame widget */
+.tpGame {
+	background-color: grey;
+	color: gold;
+	border: solid darkgrey 3px;
+	width:95%;
+	border-radius:10px;
+	display:none;
+	}
+	
+/* TpGame imgs */
+.tpimg{
+	width:80px;
+    border-radius:7px;
+    }
+
+/* TpGame Hole style */
+.tpb1h,.tpb2h,.tpb3h,.tpb3h,.tpb4h,.tpb5h,.tpb6h,.tpb7h,.tpb8h,.tpb9h
+ {
+    margin:10px 10px 10px 10px;
+    background-color: transparent;
+	border:none;
+    display:inline;	
+	}
+	
+/* TpGame Beaver style */
+.tpb1b,.tpb2b,.tpb3b,.tpb3b,.tpb4b,.tpb5b,.tpb6b,.tpb7b,.tpb8b,.tpb9b
+	{
+	margin:10px 10px 10px 10px;
+    background-color: transparent;
+	border:none;
+	display:none;
+	}
+
+/* TpGame Guide */
+.guide{
+		color:white;
+		display:none;
+	}
+	
+/*TpGame Win */	
+.Tpwin{
+    background-color:grey;
+	color: Gold;
+	border: solid darkgrey 3px;
+	width:95%;
+	border-radius:10px;
+	display: none;
+	}
+	
+/* TpGame win img */	
+.Tpwin-img{
+	width:80%;
+	border:solid darkgrey 3px;
+		border-radius:10px;
+	}
+	
+/* TpGame Out */
+.Tpout{
+    background-color: grey;
+	color: gold;
+	border: solid darkgrey 3px;
+	width:95%;
+	border-radius:10px;
+	display: none;
+	
+	}
+	
+/* TpGame Out img */
+.Tpout-img{
+	width:80%;
+	border:solid darkgrey 3px;
+		border-radius:10px;
+	}
+	
+/* TpGame play*/
+.TpGameplay {
+	
+display: block;
+
+}
+/* Try_Again  */
+.Try_Again{
+    border: solid white 2px;
+	background-color:grey;
+	border-radius:6px;
+	color: white;
+	width:100px;
+	height:30px;
+	}
+	
+/* help button*/
+.help {
+	border:none;
+	background-color: grey;
+	border-radius:4px;
+	color:white;
+	position: absolute;
+	right:30px;
+	}
+	
+/* help icon */
+.helpicon{
+	width:30px;
+	
+}
+
+	
+/* TpGame Color Changer widget*/
+.colorchanger{ 
+    width:95%;
+    border: none;
+    background-color: grey;
+    color: gold;
+    display:none;
+    }
+    
+ /* color changer button1 */
+.button1{ 
+        background-color:brown;
+        border: solid darkgrey 1px;
+		width:40px;
+		height:40px;
+		border-radius:20px;
+		}
+
+ /* color changer button2 */
+.button2{ 
+        background-color:grey;
+        border: solid darkgrey 1px;
+		width:40px;
+		height:40px;
+		border-radius:20px;	
+     	}
+ 
+ /* color changer button3 */    
+.button3{ 
+       background-color: crimson;
+       border: solid darkgrey 1px;
+	   width:40px;
+	   height:40px;
+	   border-radius:20px;
+		}
+	
+ /* color changer button4 */	
+.button4{ 
+       background-color: darkgreen;
+       border: solid darkgrey 1px;
+	   width:40px;
+	   height:40px;
+	   border-radius:20px;	
+	}
