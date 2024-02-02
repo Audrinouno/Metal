@@ -416,9 +416,9 @@ function gamescoreH ()
 	 point++;  //point increase 
 	    document.getElementById('result').style.display='none';
 	i++;
-	if(j==0)
+	if(j==0) //new
 	{
-		score=` Score:${point}/10`;
+		score=` Score: ${point}/10`;
 		result=`Out [touch beaver for try again]`;
 		document.getElementById('result').textContent=result;
 		document.getElementById('result').style.display='block';
@@ -446,7 +446,7 @@ function gamescoreH ()
 	{
     point=10;//point convert to 10
     result=`win [touch beaver for try again]`;
-    score=` Score:${point}/10`;
+    score=` Score: ${point}/10`;
     document.getElementById('result').style.display='block';
     document.getElementById('result'). textContent=result;
     document.getElementById('score'). textContent=score;
@@ -468,7 +468,7 @@ function gamescoreD()
 { 
     point--; //point decrease 
     document.getElementById('result').style.display='none';
-    if(j==0)
+    if(j==0) //new
     {
     	score=`  Score : ${point}/10! `;
 		result=`Out [touch beaver for try again]`;
