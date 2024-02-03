@@ -7,39 +7,26 @@
     <link rel="stylesheet " href="style.css">
     <title>Metal</title> 
 </head>
-
-<body>
-	
-	
+<body>		
 <header>
-	
-    	<!-- first logo -->
-    	
+
+    	<!-- first logo -->    	
 		<img class="logo" src="Metal.jpg" >
 <br>
-	
-		<!-- blinking img -->
-			
+		<!-- blinking img -->			
 		 <img class="disign" id="disign" src="disign.png" >
 <br>
-	
-		 <!-- Time Element -->
-			
+		 <!-- Time Element -->			
           <div class="time" id="time"></div>
 <br>
-	
-	     <!-- Date Element -->
-		
+	     <!-- Date Element -->		
           <div class="date" id="date"></div>  
   <br>
-
 
 </header>
 
 <Section>
 	
-
-
 	<!--TpGame widget ON/OFF Button -->
 	
 <button class="shortcut" onclick= "game( )" ><img class="shortcut_img" src="TpGame.png">
@@ -51,16 +38,11 @@
 <center>
 <div class="tpGame" id="tpGame" >
 	<br>
-				<button class="help" onclick="displayguide()"><img class="helpicon" src="help.png"></button>
+   <button class="help" onclick="displayguide()"><img class="helpicon" src="help.png"></button>
 				<h1>TpGame</h1>
 	<div class="TpGameplay" id="TpGameplay">
-	
-
-	
-
 	<img class="tplogo" src="Tplogo.png">
 	<br>
-
 		<b><p class="result" id ="result"> </p><b>
 		<b><p id="score">Score : 0/10</p></b>
 		<b><p id="timeinterval">Time : 10</p></b>
@@ -70,13 +52,13 @@
 			<button class="tpb2h" id="tpb2h" onclick="gamescoreD()"><img class="tpimg" src="hole.png"></button>
 			<button class="tpb3b" id="tpb3b" onclick="gamescoreH()"><img class="tpimg" src="beaver.png"></button>
 			<button class="tpb3h" id="tpb3h" onclick="gamescoreD()"><img class="tpimg" src="hole.png"></button>
-			<button class="tpb4b" id="tpb4b" onclick="gamescoreH()"><img class="tpimg" src="beaver.png"></button>
+<br>	<button class="tpb4b" id="tpb4b" onclick="gamescoreH()"><img class="tpimg" src="beaver.png"></button>
 			<button class="tpb4h" id="tpb4h" onclick="gamescoreD()"><img class="tpimg" src="hole.png"></button>
 			<button class="tpb5b" id="tpb5b" onclick="gamescoreH()"><img class="tpimg" src="beaver.png"></button>
 			<button class="tpb5h" id="tpb5h" onclick="gamescoreD()"><img class="tpimg" src="hole.png"></button>
-			<button class="tpb6b" id="tpb6b" onclick="gamescoreH()"><img class="tpimg" src="beaver.png"></button>
+        	<button class="tpb6b" id="tpb6b" onclick="gamescoreH()"><img class="tpimg" src="beaver.png"></button>
 			<button class="tpb6h" id="tpb6h" onclick="gamescoreD()"><img class="tpimg" src="hole.png"></button>
-			<button class="tpb7b" id="tpb7b" onclick="gamescoreH()"><img class="tpimg" src="beaver.png"></button>
+<br>	<button class="tpb7b" id="tpb7b" onclick="gamescoreH()"><img class="tpimg" src="beaver.png"></button>
 			<button class="tpb7h" id="tpb7h" onclick="gamescoreD()"><img class="tpimg" src="hole.png"></button>
 			<button class="tpb8b" id="tpb8b" onclick="gamescoreH()"><img class="tpimg" src="beaver.png"></button>
 			<button class="tpb8h" id="tpb8h" onclick="gamescoreD()"><img class="tpimg" src="hole.png"></button>
@@ -84,133 +66,102 @@
 			<button class="tpb9h" id="tpb9h" onclick="gamescoreD()"><img class="tpimg" src="hole.png"></button>
 			<br>
 </div>
-		<!--TpGame Guidlines -->	
-	
+
+		<!--TpGame Guidlines -->		
 <div class="guide" id="guide">
-	
-
-	<img class="tplogo" src="Tplogo.png">
+    <img class="tplogo" src="Tplogo.png">
 	<br>
-	
-<h2>Guide :</h2>
-<br>
+	<h2>Guide :</h2>
+            <br>
 	<p>Catch the Baby Beaver by touching the Beaver</p>
-<br>				
-<p>if you touch the Beaver you get (+1)</p>
-<br>
-<p>if you touch the holes you get (-1)</p>
-		<br>
-<p>max score is +10 for <b>Vectory</b></p>
-<br>
-<p>min score is -10 for <b>Defeat</b></p>	
-<br>
-<p>Time limit = 10.sec </p>
-<br>
+            <br>				
+    <p>if you touch the Beaver you get (+1)</p>
+            <br>
+   <p>if you touch the holes you get (-1)</p>
+            <br>
+    <p>max score is +10 for <b>Vectory</b></p>
+            <br>
+    <p>min score is -10 for <b>Defeat</b></p>	
+            <br>
+    <p>Time limit = 10.sec </p>
+            <br>
 	<strong>For Starting the Game Please touch the Hole</strong>	
-
 </div>
-	<br>
-	<br>
-		<br>
+	<br><br><br>
 </div>
 
 	<!--TpGame WIN Display -->
-		
-	<center>		
+<center>		
 	<div class="Tpwin" id="Tpwin">
 			        <br>	
 		     		<h1>TpGame</h1>
-			<img class="tplogo" src="Tplogo.png">
-		
-			
+   <img class="tplogo" src="Tplogo.png">			
 		<h1>You got Victory</h1>
 		<br>
 		<p>Congratulations</p>
          <p>on successfully Catching the Baby Beaver</p>
-         
-     <br>
-					
-		<img class="Tpwin-img" src="Tpwin.gif">
+           <br>					
+   <img class="Tpwin-img" src="Tpwin.gif">
+	  	<br> <br> 	    
+    <button class="Try_Again" id="Try_Again" onclick="Try_Again()"><p>View Score</p></button>
+           <br><br>
+	<p> Next level is Comming soon</p>
 			<br>
-				      <br>
-               <button class="Try_Again" id="Try_Again" onclick="Try_Again()"><p>View Score</p></button>
-              <br>
-				    <br>
-						<p> Next level is Comming soon</p>
-							   
-		 
-					<br>
-		</div>
-    </center>
+</div>
+</center>
     
-    <!--TpGame OUT Display-->
-    	
-    	<center>
-	<div class="Tpout" id="Tpout">
+    <!--TpGame OUT Display-->    	
+<center>
+<div class="Tpout" id="Tpout">
 			<br>
-
-	<h1>TpGame</h1>
-	
+    <h1>TpGame</h1>	
 			<img class="tplogo" src="Tplogo.png">
-		<br>
-			
+		<br>			
 		<h1>Sorry, You Defeated</h1>
 		<br>
 		<p>You failed to catch the Baby Beaver .</p> 
-	<br>
-       		
+    	<br>      	
+	<img class="Tpout-img" src="Tpout.gif">
+      <br>
+      <br>  
+   <b>
+      <button class="Try_Again" id="Try_Again" onclick="Try_Again()"> <p>View Score </p></button>
+   </b>
+        <br><br>			
+</div>
+ </center>
+</center>  	
 
-      	
-		<img class="Tpout-img" src="Tpout.gif">
-
-		<br><br>
-  
-<b>
-<button class="Try_Again" id="Try_Again" onclick="Try_Again()"> <p>View Score </p></button>
-</b>
-      <br><br>
-			
-			
-		</div>
-    </center>
-</center>
-  	
-         <!-- Apps Widget ON/OFF Button -->
-         
+         <!-- Apps Widget ON/OFF Button -->         
   <button class="shortcut" onclick= "showhide( )" ><img class="shortcut_img" src="shortcut.png">
-<b>More Apps</b>
+          <b>More Apps</b>
 </button>
-	    <!-- Apps Widget --->
-		
+
+	    <!-- Apps Widget --->		
 <center>       	
 <div class="apps" id="apps">
 				<br>
+					
 <!--Background Color Changer widget ON/OFF Button -->
-
 	<button class="shortcut"  onclick="backcolor()"><img class="shortcut_img" id="star" src="star.png"></button>
 <br>
 			<strong>Background Colour</strong>
 			<br>
+				
 	<!--Background Color Changer Widget -->
-		
-
-<div class="colorchanger" id="colorchanger" >
-	
-	<br>
-		
+<div class="colorchanger" id="colorchanger" >	
+	<br>		
 <button class="button1" onclick="brown()"></button>
 <button class="button2" onclick="grey()"></button>
 <button class="button3" onclick="crimson()"></button>
 <button class="button4" onclick="darkgreen()"></button>
-<br>
-	
+<br>	
 </div>
 <br>
 	<hr>
 		<br>
 	<p> More Apps</p>	
-	
-	<br>
+    	<br>
 <button class="button">
 <a class="link" href="https://audrinouno.github.io/Hackprank/" >
 <img class="img" src="hack.jpg">
@@ -345,4 +296,4 @@
 </footer>
  
 </body>
-	</html>
+</html>
