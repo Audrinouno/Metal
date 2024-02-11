@@ -15,6 +15,12 @@ font-family:Times, "Times New Roman", Georgia, serif;
 	height:10vw;
 	width:100vw;
 	}
+
+/* instructions logo*/
+.instr{
+	border: solid black 2px;
+	width:97%;
+	}
 	
 /* Blinking img */
 .disign {
@@ -50,10 +56,10 @@ font-family:Times, "Times New Roman", Georgia, serif;
 .apps{
 	width:95%;
 	background-color: grey;
-	border: solid darkgrey 3px;
+	border: solid black 3px;
 	border-radius:10px;
 	display:none;
-	color:white;
+	color: black;
 	}
 
 /* Apps Widget Button */
@@ -82,9 +88,10 @@ font-family:Times, "Times New Roman", Georgia, serif;
 	
 /* TpGame widget */
 .tpGame {
-	background-color: grey;
-	color: gold;
-	border: solid darkgrey 3px;
+	background-color:#B0B0A0;
+	text-shadow:0.5px 0px white;
+	color: black;
+	border: solid black 3px;
 	width:95%;
 	border-radius:10px;
 	display:none;
@@ -116,15 +123,16 @@ font-family:Times, "Times New Roman", Georgia, serif;
 
 /* TpGame Guide */
 .guide{
-		color:white;
+		color: black;
 		display:none;
 	}
 	
 /*TpGame Win */	
 .Tpwin{
-    background-color:grey;
-	color: Gold;
-	border: solid darkgrey 3px;
+    background-color:#B0B0A0;
+    text-shadow:0.5px 0px white;
+	color: black;
+	border: solid black 3px;
 	width:95%;
 	border-radius:10px;
 	display: none;
@@ -133,15 +141,16 @@ font-family:Times, "Times New Roman", Georgia, serif;
 /* TpGame win img */	
 .Tpwin-img{
 	width:80%;
-	border:solid darkgrey 3px;
+	border:solid black 3px;
 		border-radius:10px;
 	}
 	
 /* TpGame Out */
 .Tpout{
-    background-color: grey;
-	color: gold;
-	border: solid darkgrey 3px;
+    background-color:#B0B0A0;
+    text-shadow:0.5px 0px white;
+	color: black;
+	border: solid black 3px;
 	width:95%;
 	border-radius:10px;
 	display: none;
@@ -151,7 +160,7 @@ font-family:Times, "Times New Roman", Georgia, serif;
 /* TpGame Out img */
 .Tpout-img{
 	width:80%;
-	border:solid darkgrey 3px;
+	border:solid black 3px;
 		border-radius:10px;
 	}
 	
@@ -163,10 +172,11 @@ display: block;
 }
 /* Try_Again  */
 .Try_Again{
-    border: solid white 2px;
-	background-color:grey;
+    border: solid black 2px;
+	background-color:white;
+	text-shadow:0.5px 0px white;
 	border-radius:6px;
-	color: white;
+	color: black;
 	width:100px;
 	height:30px;
 	}
@@ -174,7 +184,7 @@ display: block;
 /* help button*/
 .help {
 	border:none;
-	background-color: grey;
+	background-color: transparent;
 	border-radius:4px;
 	color:white;
 	position: absolute;
@@ -192,7 +202,7 @@ display: block;
 .colorchanger{ 
     width:95%;
     border: none;
-    background-color: grey;
+    background-color: transparent;
     color: gold;
     display:none;
     }
@@ -232,8 +242,113 @@ display: block;
 	   height:40px;
 	   border-radius:20px;	
 	}
-
+	
+/* TpGame result*/
 .result {
 	display:none;
 	}
 	
+
+/* tic tac toe board*/
+
+.Tgame{
+	background-color:#73A9B8;
+	text-shadow:0.5px 0px white;
+	color: black;
+	border: solid black 3px;
+	width:95%;
+	border-radius:10px;
+	display: none;
+	}
+	
+.Tgameplay {
+	background-color:#73A9B8;
+	text-shadow:0.5px 0px white;
+	color: black;
+	border: solid black 3px;
+	width:95%;
+	border-radius:10px;
+	display:none;
+	}	
+
+.oggy_C{
+	width:200px;
+	}
+.oggy-jack,.j-D-M{
+	width:50%;
+    border-radius:5px;
+    display: block;
+    background-color:#7CCEA6;
+    border: solid black 3px ;
+	}
+
+.oggy-jackS,.j-D-MS{
+	width:50%;
+    border-radius:5px;
+    display: block;
+    background-color:#7CCEA6;
+    border: solid black 3px ;
+	}
+	
+.TUCimg{
+	border-radius:2px;
+	
+	width:100%;
+	background-color:#FE9434;
+	}
+	
+.playbutton {
+	width:50px;
+	background-color:#CEC9C0;
+	}
+
+.opponentO,.opponentX{
+	width:50px;
+	height:50px;
+	border: solid black 3px;
+	border-radius:50px;
+	position:sticky;
+	right:80%;
+	display:none;
+	}
+
+.userO,.userX{
+	width:50px;
+	height:50px;
+	border: solid black 3px;
+	border-radius:50px;
+	position:sticky;
+	left:80%;
+	display:none;
+	}
+	
+.tic-tac-toe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border: 2px solid #000;
+  
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  font-size:90px;
+  font-family: cursive;
+  background-color:#CEC9C0;
+}
+.mute{
+	width:100px;
+	background-color:white;
+	color: black;
+	}

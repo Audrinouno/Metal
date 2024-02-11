@@ -9,6 +9,7 @@
 </head>
 <body>		
 <header>
+		
 
     	<!-- first logo -->    	
 		<img class="logo" src="Metal.jpg" >
@@ -20,17 +21,17 @@
           <div class="time" id="time"></div>
 <br>
 	     <!-- Date Element -->		
-          <div class="date" id="date"></div>  
+   <div class="date" id="date"></div>  
   <br>
-
+<script src="script.js"> </script>
 </header>
 
 <Section>
 	
 	<!--TpGame widget ON/OFF Button -->
 	
-<button class="shortcut" onclick= "game( )" ><img class="shortcut_img" src="TpGame.png">
-<b>TpGame</b>
+<button class="shortcut" onclick= "Tpgame( )" ><img class="shortcut_img" src="TpGame.png">
+<b>Touchpoint Game</b>
 </button>	
 
 	<!--TpGame widget -->
@@ -103,14 +104,15 @@
            <br>					
    <img class="Tpwin-img" src="Tpwin.gif">
 	  	<br> <br> 	    
-    <button class="Try_Again" id="Try_Again" onclick="Try_Again()"><p>View Score</p></button>
+    <button class="Try_Again" id="Try_Again" onclick="Try_Again()"><b>View Score</b></button>
            <br><br>
-	<p> Next level is Comming soon</p>
+
 			<br>
 </div>
 </center>
     
     <!--TpGame OUT Display-->    	
+    
 <center>
 <div class="Tpout" id="Tpout">
 			<br>
@@ -125,18 +127,137 @@
       <br>
       <br>  
    <b>
-      <button class="Try_Again" id="Try_Again" onclick="Try_Again()"> <p>View Score </p></button>
+      <button class="Try_Again" id="Try_Again" onclick="Try_Again()"> <b>View Score </b></button>
    </b>
         <br><br>			
 </div>
  </center>
 </center>  	
+     	<script src="Tpgame.js"> </script>
+     
+     <!-- tic tac toe game ON/OFF Button -->
+     
+     <button class="shortcut" onclick= "Tgame( )" ><img class="shortcut_img" src="Tic-Toc-Toe.png">
+<b>Tic-Tac-Toe Game</b>
+     </button>
+ 
+  
 
-         <!-- Apps Widget ON/OFF Button -->         
-  <button class="shortcut" onclick= "showhide( )" ><img class="shortcut_img" src="shortcut.png">
-          <b>More Apps</b>
+    <!-- tic tac toe game widget -->
+         
+<center>
+	<div class="Tgame" id="Tgame" >
+ 
+
+		<br>
+			<h1>Tic-Toc-Toe Game</h1>
+		<br>
+
+<img class="oggy_C" id="oggy_C" src="Oggy_and_C.png">
+	<br>
+
+		<br>
+	<h4>Select Your Team</h4>
+	<br>
+<button class="Oggy-jackS" id="oggy-jackS" onclick="TeamO()" >
+	<img class="TUCimg"   src="oggy-jackS.jpg">
+		Oggy Team - O
 </button>
 
+
+<div class="oggy-jack" id="oggy-jack" >
+<img class="TUCimg"  src="oggy-jack.gif">
+	<br>
+
+	<button class="playbutton" id="Oplay" onclick="Oplay()">
+		Play
+	</button>
+		<br>
+</div>
+	<br>
+		<br>
+			
+<button class="j-D-MS" id="j-D-MS" onclick="TeamX()">
+			<img class="TUCimg"  src="j-D-MS.jpg">
+				Chrockrochs Team - X
+</button>
+
+<div class="j-D-M" id="j-D-M">
+
+		<img class="TUCimg"  src="j-D-M.gif">
+				<br>
+	
+	<button class="playbutton" id="Xplay" onclick="Xplay()">
+		Play
+	</button>	
+		<br>
+			
+	
+</div>
+<br>
+				<button class="mute" onclick="pauseMusic() , pauseClaugh ()">Volume Mute </button>
+				
+		<br>
+		<br>
+			</div>	
+
+<!-- Tgameplay -->
+	
+	
+		
+<div class="Tgameplay" id="Tgameplay">
+		<br>
+			<h1>Tic-Toc-Toe Game</h1>
+		<br>
+<img class="oggy_C" id="oggy_C" src="Oggy_and_C.png">
+	<br>
+    <br>
+		<img class="opponentO" id="opponentO"  src="oggy-jackS.jpg">
+	
+	<img class="opponentX" id="opponentX" src="j-D-MS.jpg">
+			<p>Opponent</p>
+	<br>
+	<center>
+  <div class="tic-tac-toe">
+    <div class="row">
+      <div class="cell" onclick="makeMove(0, 0)"></div>
+      <div class="cell" onclick="makeMove(0, 1)"></div>
+      <div class="cell" onclick="makeMove(0, 2)"></div>
+    </div>
+    <div class="row">
+      <div class="cell" onclick="makeMove(1, 0)"></div>
+      <div class="cell" onclick="makeMove(1, 1)"></div>
+      <div class="cell" onclick="makeMove(1, 2)"></div>
+    </div>
+    <div class="row">
+      <div class="cell" onclick="makeMove(2, 0)"></div>
+      <div class="cell" onclick="makeMove(2, 1)"></div>
+      <div class="cell" onclick="makeMove(2, 2)"></div>
+    </div>
+  </div>
+  
+</center>
+<br>
+	<p> You</p>
+			<img class="userX" id="userX" src="j-D-MS.jpg">
+		<img class="userO" id="userO"  src="oggy-jackS.jpg">
+	
+	<br>
+		<br>
+</div>
+
+</center>
+
+<script src="Tgame.js"> </script>
+
+
+         <!-- Apps Widget ON/OFF Button -->     
+    
+  <button class="shortcut" onclick= "showhide( )" ><img class="shortcut_img" src="shortcut.png">
+          <b>More Apps</b>
+   </button>
+ 
+ 	
 	    <!-- Apps Widget --->		
 <center>       	
 <div class="apps" id="apps">
@@ -285,14 +406,41 @@
 <br>
 </div>
 </center>
-
+<script src="more.js"> </script>
 	<br>
 
 </section>
 
 <footer>
+	<br>
+  	<center>
+  	<p>Metal Technology</p>
+  <br>
+<img class="instr" src="tech.jpg">
+	<br>
+	</center>
+	
+	<!---Music--->
+	
+<script src="music.js"></script>
 
-	<script src="script.js"> </script>
+    <audio id="backgroundMusic" >
+      <source src="oggy-song.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>     
+	<audio id="ClaughMusic" autoplay loop>
+      <source src="cockroach.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    	<audio id="OlaughMusic" autoplay loop >
+      <source src="oggy-laugh.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+		<audio id="mouse-click" >
+      <source src="mouse-click.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+
 </footer>
  
 </body>
